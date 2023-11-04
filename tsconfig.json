@@ -22,8 +22,8 @@
 
     /* Path Alias */
     "paths": {
-      "@/UIKit": ["./src/UIKit/*"],
-      "@/*": ["./src/*"]
+      "@@/UIKit": ["./src/UIKit/*"],
+      "@@/*": ["./src/*"]
     }
   },
   "include": ["src"],
