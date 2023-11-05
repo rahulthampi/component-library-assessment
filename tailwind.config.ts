@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+import { type Config } from 'tailwindcss';
+
 module.exports = {
   darkMode: ['class'],
   content: [
@@ -14,24 +15,31 @@ module.exports = {
     },
 
     fontSize: {
-      'display-2xl': ['72px', { lineHeight: '90px', letterSpacing: '-0.02rem' }],
-      'display-xl': ['60px', { lineHeight: '72px', letterSpacing: '-0.02rem' }],
-      'display-lg': ['48px', { lineHeight: '60px', letterSpacing: '-0.02rem' }],
-      'display-md': ['36px', { lineHeight: '44px', letterSpacing: '-0.02rem' }],
-      'display-sm': ['30px', { lineHeight: '38px', letterSpacing: '2.375rem' }],
-      'display-xs': ['24px', { lineHeight: '32px', letterSpacing: '2rem' }],
+      'd-2xl': ['72px', { lineHeight: '90px', letterSpacing: '-0.02rem' }],
+      'd-xl': ['60px', { lineHeight: '72px', letterSpacing: '-0.02rem' }],
+      'd-lg': ['48px', { lineHeight: '60px', letterSpacing: '-0.02rem' }],
+      'd-md': ['36px', { lineHeight: '44px', letterSpacing: '-0.02rem' }],
+      'd-sm': ['30px', { lineHeight: '38px', letterSpacing: '2.375rem' }],
+      'd-xs': ['24px', { lineHeight: '32px', letterSpacing: '2rem' }],
 
-      'text-xl': ['20px', { lineHeight: '30px' }],
-      'text-lg': ['18px', { lineHeight: '28px' }],
-      'text-md': ['16px', { lineHeight: '24px' }],
-      'text-sm': ['14px', { lineHeight: '20px' }],
-      'text-xs': ['12px', { lineHeight: '18px' }],
-      'text-xxs': ['10px', { lineHeight: '15px' }],
-      'text-xxxs': ['8px', { lineHeight: '15px' }],
+      't-xl': ['20px', { lineHeight: '30px' }],
+      't-lg': ['18px', { lineHeight: '28px' }],
+      't-md': ['16px', { lineHeight: '24px' }],
+      't-sm': ['14px', { lineHeight: '20px' }],
+      't-xs': ['12px', { lineHeight: '18px' }],
+      't-xxs': ['10px', { lineHeight: '15px' }],
+      't-xxxs': ['8px', { lineHeight: '15px' }],
     },
 
     fontFamily: {
       inter: ['Inter', 'sans-serif'],
+    },
+
+    fontWeight: {
+      normal: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
     },
 
     spacing: {
@@ -60,6 +68,7 @@ module.exports = {
     },
 
     colors: {
+      transparent: 'transparent',
       background: 'hsl(var(--background))',
       foreground: 'hsl(var(--foreground))',
 
@@ -179,10 +188,11 @@ module.exports = {
       sm: 'var(--radius-sm)',
       DEFAULT: 'var(--radius)',
       lg: 'var(--radius-lg)',
+      xl: 'var(--radius-xl)',
       full: 'var(--radius-full)',
     },
 
     extend: {},
   },
   plugins: [require('tailwindcss-animate')],
-};
+} satisfies Config;

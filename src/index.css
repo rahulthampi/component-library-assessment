@@ -1,19 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&lang=en');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&lang=en');
-
 @layer base {
   :root {
-    --background: 0, 0%, 100%;
-    --foreground: 0, 0%, 10%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
 
-    --primary: 210, 50%, 45%;
-    --primary-foreground: 0, 0%, 100%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 240, 60%, 60%;
-    --secondary-foreground: 0, 0%, 10%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
     --info: 200, 80%, 60%;
     --info-foreground: 0, 0%, 10%;
@@ -21,14 +21,14 @@
     --warning: 50, 100%, 50%;
     --warning-foreground: 0, 0%, 10%;
 
-    --danger: 0, 70%, 60%;
-    --danger-foreground: 0, 0%, 100%;
+    --danger: 0 100% 50%;
+    --danger-foreground: 210 40% 98%;
 
     --success: 120, 50%, 45%;
     --success-foreground: 0, 0%, 100%;
 
-    --neutral: 0, 0%, 80%;
-    --neutral-foreground: 0, 0%, 10%;
+    --neutral: 210 40% 96.1%;
+    --neutral-foreground: 215.4 16.3% 46.9%;
 
     --border: 214.3 31.8% 91.4%;
     --border-ring: 213, 79%, 55%;
@@ -37,7 +37,8 @@
     --radius-none: 0;
     --radius-sm: 0.125rem;
     --radius-lg: 0.5rem;
-    --radius-full: 50%;
+    --radius-xl: 1rem;
+    --radius-full: 9999px;
   }
 
   /* .dark {
