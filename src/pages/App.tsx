@@ -1,7 +1,14 @@
 import CardWrapper from '@@/components/CardWrapper';
+import ModalWrapper from '@@/components/ModalWrapper';
 
 function App() {
-  return <CardWrapper />;
+  return (
+    <>
+      <ModalWrapper />
+
+      <CardWrapper />
+    </>
+  );
 }
 App.displayName = 'App';
 
