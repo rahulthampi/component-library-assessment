@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "format:prettier": "prettier --write ./src",
     "add:shad": "npx shadcn-ui@latest add $@",
-    "storybook": "storybook dev -p 3001",
+    "build-tailwind": "npx tailwindcss -o dist/tailwind.css --minify",
+    "storybook": "yarn build-tailwind && storybook dev -p 3001",
     "build-storybook": "storybook build"
   },
   "dependencies": {
