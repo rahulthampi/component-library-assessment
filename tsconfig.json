@@ -22,7 +22,7 @@
 
     /* Path Alias */
     "paths": {
-      "@@/UIKit": ["./src/UIKit/*"],
+      "@@/UIKit/*": ["./src/UIKit/*"],
       "@@/*": ["./src/*"]
     }
   },
