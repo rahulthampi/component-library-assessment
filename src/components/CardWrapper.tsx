@@ -5,7 +5,7 @@ import { Card } from '../UIKit/ui';
 
 const CardWrapper = () => {
   return (
-    <div className="flex gap-4 p-4 flex-wrap">
+    <div className="flex gap-4 p-4 flex-wrap" data-testid="card-wrapper">
       <Card className="w-[385px]">
         <div className="flex gap-4 items-center">
           <Avatar className="w-12 h-12">

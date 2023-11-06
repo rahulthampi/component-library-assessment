@@ -16,7 +16,7 @@ const ModalWrapper = () => {
   };
 
   return (
-    <div className="flex gap-4 p-4 flex-wrap">
+    <div className="flex gap-4 p-4 flex-wrap" data-testid="modal-wrapper">
       <Modal.Root>
         <Modal.Trigger asChild>
           <Button variant="outline">Open Modal</Button>
