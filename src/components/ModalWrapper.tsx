@@ -1,5 +1,4 @@
-import { Modal } from '@@/UIKit/ui';
-import { Button } from '@@/UIKit/ui/button';
+import { Modal, Button } from '../UIKit/ui';
 
 import { useState } from 'react';
 

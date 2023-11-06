@@ -1,9 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Badge, Heading } from '@radix-ui/themes';
 
-import { Avatar, AvatarFallback, AvatarImage } from '@@/UIKit/ui/Avatar/avatar.base';
-
 import { Card, CardProps } from './card';
+import { Avatar, AvatarFallback, AvatarImage } from '../Avatar/avatar.base';
 
 /**
  * The `Card` component is a versatile container for presenting information and actions related to a single concept or object, such as a document or a contact. Cards can be used to give prominence to information and create predictable design patterns. It's important to use them consistently for specific use cases across different user experiences.

@@ -1,5 +1,5 @@
-import CardWrapper from '@@/components/CardWrapper';
-import ModalWrapper from '@@/components/ModalWrapper';
+import CardWrapper from '../components/CardWrapper';
+import ModalWrapper from '../components/ModalWrapper';
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import { Badge, Heading } from '@radix-ui/themes';
 
-import { Avatar, AvatarFallback, AvatarImage } from '@@/UIKit/ui/Avatar/avatar.base';
-import { Card } from '@@/UIKit/ui';
+import { Avatar, AvatarFallback, AvatarImage } from '../UIKit/ui/Avatar/avatar.base';
+import { Card } from '../UIKit/ui';
 
 const CardWrapper = () => {
   return (

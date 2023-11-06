@@ -3,7 +3,7 @@ import * as DialogPrimitive from '@radix-ui/react-dialog';
 import { X } from 'lucide-react';
 import { VariantProps, cva } from 'class-variance-authority';
 
-import { cn } from '@@/lib/utils';
+import { cn } from '../../../lib/utils';
 
 const Root = DialogPrimitive.Root;
 

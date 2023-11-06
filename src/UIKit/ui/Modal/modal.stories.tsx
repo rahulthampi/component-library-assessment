@@ -2,7 +2,7 @@ import { FC, ReactNode, useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Plus } from 'lucide-react';
 
-import { Button } from '@@/UIKit/ui/button';
+import { Button } from '..';
 
 import * as Modal from './modal';
 

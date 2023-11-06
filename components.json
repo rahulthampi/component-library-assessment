@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
   "aliases": {
-    "components": "@@/UIKit",
-    "utils": "@@/lib/utils"
+    "components": "./src/UIKit",
+    "utils": "./src/lib/utils.ts"
   },
   "rsc": false,
   "style": "default",
