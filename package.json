@@ -12,7 +12,7 @@
     "add:shad": "npx shadcn-ui@latest add $@",
     "build-tailwind": "npx tailwindcss -o dist/tailwind.css --minify",
     "storybook": "yarn build-tailwind && storybook dev -p 3001",
-    "build-storybook": "storybook build",
+    "build-storybook": "yarn build-tailwind && storybook build",
     "test": "jest --verbose"
   },
   "dependencies": {
