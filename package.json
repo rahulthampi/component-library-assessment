@@ -12,7 +12,8 @@
     "add:shad": "npx shadcn-ui@latest add $@",
     "build-tailwind": "npx tailwindcss -o dist/tailwind.css --minify",
     "storybook": "yarn build-tailwind && storybook dev -p 3001",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test": "jest --verbose"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.4",
@@ -28,6 +29,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
     "@storybook/addon-essentials": "^7.5.2",
     "@storybook/addon-interactions": "^7.5.2",
     "@storybook/addon-links": "^7.5.2",
@@ -36,9 +39,13 @@
     "@storybook/react": "^7.5.2",
     "@storybook/react-vite": "^7.5.2",
     "@storybook/testing-library": "^0.2.2",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.7",
     "@types/node": "^20.8.10",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "@types/react-test-renderer": "^18.0.5",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
@@ -48,13 +55,41 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-storybook": "^0.6.15",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^30.0.0-alpha.1",
+    "jest-environment-jsdom": "^30.0.0-alpha.1",
+    "jest-svg-transformer": "^1.0.0",
     "postcss": "^8.4.31",
     "prettier": "3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.6",
+    "react-test-renderer": "^18.2.0",
+    "snapshot-diff": "^0.10.0",
     "storybook": "^7.5.2",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      "^.+\\.svg$": "jest-svg-transformer",
+      "^.+\\.(css|less|scss)$": "identity-obj-proxy"
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.ts"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "ts",
+      "tsx",
+      "json",
+      "node"
+    ]
   },
   "packageManager": "yarn@4.0.1"
 }
