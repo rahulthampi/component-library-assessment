@@ -1,27 +1,52 @@
-# React + TypeScript + Vite
+# Coinshift Component Library(Assignment)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is scaffolded using Vite, styled with Tailwind CSS, documented with Storybook, and tested with Jest and React Testing Library. It leverages Radix-UI and Shadcn/ui as base components to enhance its functionality and styling.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. [Getting Started](#getting-started)
+2. [Documentation](#documentation)
+3. [Testing](#testing)
+4. [Contributing](#contributing)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Before you begin, ensure that you have Node.js(`v18.18.0`) and Yarn(`v4.0.1`) installed on your machine.
+Once they are available the install all the dependencies using:
 
-- Configure the top-level `parserOptions` property like this:
+```sh
+yarn install
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+# or just
+yarn
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Documentation
+
+We use Storybook for component documentation. To run Storybook, use:
+
+```bash
+yarn storybook
+```
+
+This opens Storybook in your web browser, enabling you to see and interact with the components in various states.
+
+`Note`: Since we are using custom tailwind theme config I am building tailwind.css file for applying the new classes
+Tried figuring out a solution but couldn't due to time constraints.
+
+### Testing
+
+Testing is set up using Jest and React Testing Library. Run the test suite with:
+
+```bash
+yarn test
+```
+
+### Contributing
+
+**TODOs**:
+
+1. Custom tailwind theme config to storybook
+2. `twMerge` issues with custom tailwind theme. Need to extend `twMerge` using `extendTailwindMerge`
+3. Path alias config to Jest
+4. Extract Jest config from `package.json` to `jest.config.ts`
